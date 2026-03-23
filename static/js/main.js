@@ -2,12 +2,12 @@ document.addEventListener('DOMContentLoaded', function () {
     const canvas = document.getElementById('myCanvas');
     const ctx = canvas.getContext('2d');
     let currentAnimation = null;
-    let animationFrameId = null;
+    window.animationFrameId = null;
 
     function clearCurrentAnimation() {
-        if (animationFrameId) {
-            cancelAnimationFrame(animationFrameId);
-            animationFrameId = null;
+        if (window.animationFrameId) {
+            cancelAnimationFrame(window.animationFrameId);
+            window.animationFrameId = null;
         }
         if (currentAnimation) {
             clearInterval(currentAnimation);
