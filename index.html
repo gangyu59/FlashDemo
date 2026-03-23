@@ -2,24 +2,38 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Visualizations</title>
-    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>趣味演示 Flash Demo</title>
     <link rel="manifest" href="/manifest.json">
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
 </head>
 <body>
-    <canvas id="myCanvas" width="900" height="700" style="border:1px solid #000000;"></canvas>
-    <div class="button-container">
-        <button id="showParticleAnimation">Particle Animation</button>
-        <button id="show3DCube">3D Cube</button>
-        <button id="showSVGPath">SVG Path Animation</button>
-        <button id="showFireworks">Canvas Fireworks</button>
-        <button id="showDataViz">Data Visualization</button>
-        <button id="showFluidSim">Fluid Simulation</button>
-        <button id="showNeonText">Neon Text</button>
-        <button id="showCarousel">Image Carousel</button>
-        <button id="showParallax">Parallax Scrolling</button>
-        <button id="showGlobe">2D Globe</button>
+    <header>
+        <h1>趣味演示 Flash Demo</h1>
+        <p>点击按钮探索各种视觉演示 · Click a button to explore visual demos</p>
+    </header>
+
+    <canvas id="myCanvas" width="900" height="700"></canvas>
+
+    <div class="button-grid">
+        <div class="section-label">粒子特效 Particle Effects</div>
+        <button class="btn-particle" id="showParticleAnimation">✨ Particle Animation</button>
+        <button class="btn-particle" id="showFireworks">🎆 Canvas Fireworks</button>
+        <button class="btn-particle" id="showNeonText">💡 Neon Text</button>
+
+        <div class="section-label">图形与动画 Graphics &amp; Motion</div>
+        <button class="btn-graphics" id="show3DCube">🧊 3D Cube</button>
+        <button class="btn-graphics" id="showSVGPath">🎨 SVG Path Animation</button>
+        <button class="btn-graphics" id="showCarousel">🖼️ Image Carousel</button>
+        <button class="btn-graphics" id="showParallax">🌅 Parallax Scrolling</button>
+
+        <div class="section-label">数据可视化 Data Visualization</div>
+        <button class="btn-data" id="showDataViz">📊 Data Visualization</button>
+        <button class="btn-data" id="showGlobe">🌍 2D Globe</button>
+
+        <div class="section-label">流体模拟 Simulation</div>
+        <button class="btn-fluid" id="showFluidSim">🌊 Fluid Simulation</button>
     </div>
 
     <script src="static/js/particleAnimation.js"></script>
